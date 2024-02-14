@@ -1,0 +1,13 @@
+﻿@model SchoolManagementSystem.Models.StdentModel.Student
+
+<form asp-controller="YourController" asp-action="RegisterStudent" method="post">
+    <div>
+        <label for="FirstName">First Name:</label>
+        <input asp-for="FirstName" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+
+    <!-- Add other input fields for other properties -->
+
+    <button type="submit">Register</button>
+</form>

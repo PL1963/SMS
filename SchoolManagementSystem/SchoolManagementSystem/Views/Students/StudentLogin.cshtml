@@ -1,0 +1,97 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model SchoolManagementSystem.Models.ViewModel.LoginViewModel
+
+<!DOCTYPE html>
+<html>
+<head> 
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h6 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        h3 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <h3>Student Management System</h3>
+
+    <div class="login-container">
+        <h6>Login</h6>
+        <hr />
+
+        <form method="post" id="loginForm">
+            <div>
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" asp-for="UserName" />
+            </div>
+
+            <div>
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="Password" />
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
+
